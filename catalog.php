@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <?php 
 
-$catalog = array(
-  "test", 
-  "test2",
-  "test3"
-);
-
 //page title and section class defaults;
 $pageTitle = "Full Catalog";
 $section = null;
