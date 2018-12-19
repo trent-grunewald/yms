@@ -21,13 +21,13 @@ if (isset($_GET["cat"])){
 }
 
 include("inc/header.php"); 
-
 ?>
 
 <div class="section catalog page">
   <h1><?php echo $pageTitle ?></h1>
 
   <ul class="items">
+<!-- Creates media list from the library.php page -->
   <?php
   foreach($catalog as $media) {
     echo "<li><a href='#'><img src='" 
@@ -37,6 +37,7 @@ include("inc/header.php");
     . "</a></li>";
   }
   ?>
+
   </ul>
 </div>
   
