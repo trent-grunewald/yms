@@ -17,9 +17,9 @@ $catalog [201] = [
   "publisher" => [
     "Pantheon", 
     "Random House"
-    ]
+  ],
   "author" => "Mark Z. Danielewski"
-]
+];
 
 $catalog [202] = [
   "title" => "The House on the Borderlands",
@@ -33,9 +33,9 @@ $catalog [202] = [
   "isbn" => "978-1-56389-545-6",
   "publisher" => [
     "Chapman and Hall"
-    ]
+  ],
   "author" => "William Hope Hodgson"
-]
+];
 
 $catalog [101] = [
   "title" => "Event Horizon",
@@ -45,7 +45,7 @@ $catalog [101] = [
   "edition" => "Collectors",
   "distributor" => "Arrow",
   "category" => "Movies"
-]
+];
 
 $catalog [301] = [
   "title" => "Humans Are Such Easy Prey",
@@ -55,10 +55,8 @@ $catalog [301] = [
   "format" => [
     "Vinyl",
     "Collectors"
-  ]
+  ],
   "year" => 2016,
   "category" => "Music",
   "artist" => "Perterbator"
-]
-
-?>
+];

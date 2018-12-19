@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php 
+include("inc/library.php");
 
 //page title and section class defaults;
 $pageTitle = "Full Catalog";
@@ -23,13 +24,17 @@ include("inc/header.php");
 
 ?>
 
-<div class="section page">
+<div class="section catalog page">
   <h1><?php echo $pageTitle ?></h1>
 
-  <ul>
+  <ul class="items">
   <?php
   foreach($catalog as $media) {
-    echo "<li>" . $media . "</li>";
+    echo "<li><a href='#'><img src='" 
+    . $media["cover"] . "' alt='" 
+    . $media["title"] . "'  />" 
+    . "<p>View Details</p>"
+    . "</a></li>";
   }
   ?>
   </ul>

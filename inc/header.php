@@ -13,6 +13,7 @@
         <h1 class="branding-title"><a href="/">My Media Shelf</a></h1>
   
         <ul class="nav">
+          <!-- The PHP adds the class "on" (The css underline) if the condition statement is met, otherwise it removes it. -->
                   <li class="books <?php if ($section == "books") {echo " on";} ?>"><a href="catalog.php?cat=books">Books</a></li>
                   <li class="movies <?php if ($section == "movies") {echo " on";} ?>"><a href="catalog.php?cat=movies">Movies</a></li>
                   <li class="music <?php if ($section == "music") {echo " on";} ?>"><a href="catalog.php?cat=music">Music</a></li>
