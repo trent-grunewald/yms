@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php 
 include("inc/library.php");
 include("inc/functions.php");

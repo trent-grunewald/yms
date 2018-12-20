@@ -5,9 +5,10 @@ $catalog = [];
 $catalog [201] = [
   "title" => "House of Leaves",
   "cover" => "img/201.jpg",
-  "genres" => [
+  "genre" => [
     "Horror", 
-    "Romance", "Satire", 
+    "Romance", 
+    "Satire", 
     "Postmodernism"
   ],
   "format" => "Paperback",
@@ -24,7 +25,7 @@ $catalog [201] = [
 $catalog [202] = [
   "title" => "The House on the Borderlands",
   "cover" => "img/202.jpg",
-  "genres" => [
+  "genre" => [
     "Horror"
   ],
   "format" => "Hardcover",
@@ -39,22 +40,28 @@ $catalog [202] = [
 
 $catalog [101] = [
   "title" => "Event Horizon",
+  "director" => "Paul W.S. Anderson",
+  "screenplay" => ["Philip Eisner"],
   "cover" => "img/101.jpg",
-  "genre" => "Horror",
+  "genre" => ["Horror"],
   "format" => "Blue-Ray",
   "edition" => "Collectors",
   "distributor" => "Arrow",
-  "category" => "Movies"
+  "category" => "Movies",
+  "year" => 1999
 ];
 
 $catalog [102] = [
   "title" => "Terrified",
+  "director" => "Demián Rugna",
+  "screenplay" => ["Demián Rugna"],
   "cover" => "img/102.jpg",
-  "genre" => "Horror",
+  "genre" => ["Horror"],
   "format" => "Blue-Ray",
   "edition" => "Standard",
   "distributor" => "Argentina",
-  "category" => "Movies"
+  "category" => "Movies",
+  "year" => 2018
 ];
 
 $catalog [301] = [
@@ -74,7 +81,7 @@ $catalog [301] = [
 $catalog [203] = [
   "title" => "House of Leaves",
   "cover" => "img/201.jpg",
-  "genres" => [
+  "genre" => [
     "Horror", 
     "Romance", "Satire", 
     "Postmodernism"
@@ -93,7 +100,7 @@ $catalog [203] = [
 $catalog [204] = [
   "title" => "The House on the Borderlands",
   "cover" => "img/202.jpg",
-  "genres" => [
+  "genre" => [
     "Horror"
   ],
   "format" => "Hardcover",
