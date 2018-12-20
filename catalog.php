@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php 
 include("inc/library.php");
+include("inc/functions.php");
 
 //page title and section class defaults;
 $pageTitle = "Full Catalog";
@@ -29,12 +30,10 @@ include("inc/header.php");
   <ul class="items">
 <!-- Creates media list from the library.php page -->
   <?php
-  foreach($catalog as $media) {
-    echo "<li><a href='#'><img src='" 
-    . $media["cover"] . "' alt='" 
-    . $media["title"] . "'  />" 
-    . "<p>View Details</p>"
-    . "</a></li>";
+  $categories = array_category($catalog, $section);
+
+  foreach($categories as $id) {
+    echo get_item_html($id,$catalog[$id]);
   }
   ?>
 

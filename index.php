@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <?php 
+include("inc/library.php");
+include("inc/functions.php");
 
 $pageTitle = "Your Media Shelf";
 $section = null;
@@ -14,29 +16,16 @@ include("inc/header.php");
           <h2>May we suggest something?</h2>
   
           <ul class="items">
-            <li>
-              <a href="#">
-                <img src="img/bape.png" alt="Forrest Gump">
-                <p>View Details</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/bape2.png" alt="The Princess Bride">
-                <p>View Details</p>
-              </a></li>
-            <li>
-              <a href="#">
-                <img src="img/bape3.png" alt="Elvis Forever">
-                <p>View Details</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/bape2.png" alt="No Fences">
-                <p>View Details</p>
-              </a>
-            </li>								
+
+            <?php
+           // Returns 4 random items from the Catalog array
+
+            $randomize = array_rand($catalog,4);
+
+            foreach($randomize as $id) {
+              echo get_item_html($id,$catalog[$id]);
+            }
+            ?>
           </ul>
   
         </div>

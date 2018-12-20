@@ -60,3 +60,62 @@ $catalog [301] = [
   "category" => "Music",
   "artist" => "Perterbator"
 ];
+
+$catalog [203] = [
+  "title" => "House of Leaves",
+  "cover" => "img/201.jpg",
+  "genres" => [
+    "Horror", 
+    "Romance", "Satire", 
+    "Postmodernism"
+  ],
+  "format" => "Paperback",
+  "year" => 2000,
+  "category" => "Books",
+  "isbn" => "0-375-70376-4",
+  "publisher" => [
+    "Pantheon", 
+    "Random House"
+  ],
+  "author" => "Mark Z. Danielewski"
+];
+
+$catalog [204] = [
+  "title" => "The House on the Borderlands",
+  "cover" => "img/202.jpg",
+  "genres" => [
+    "Horror"
+  ],
+  "format" => "Hardcover",
+  "year" => 1908,
+  "category" => "Books",
+  "isbn" => "978-1-56389-545-6",
+  "publisher" => [
+    "Chapman and Hall"
+  ],
+  "author" => "William Hope Hodgson"
+];
+
+$catalog [102] = [
+  "title" => "Event Horizon",
+  "cover" => "img/101.jpg",
+  "genre" => "Horror",
+  "format" => "Blue-Ray",
+  "edition" => "Collectors",
+  "distributor" => "Arrow",
+  "category" => "Movies"
+];
+
+$catalog [302] = [
+  "title" => "Humans Are Such Easy Prey",
+  "album" => "Dangerous Days",
+  "cover" => "img/301.jpg",
+  "genre" => "Synthwave",
+  "format" => [
+    "Vinyl",
+    "Collectors"
+  ],
+  "year" => 2016,
+  "category" => "Music",
+  "artist" => "Perterbator"
+];
