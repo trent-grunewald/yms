@@ -24,6 +24,12 @@ include("inc/header.php");
 
 <div class="section page">
   <div class="wrapper">
+  <div class="breadcrumbs">
+    <a href="catalog.php">All Shelfs</a>
+      &gt; <a href="catalog.php?cat=<?php echo strtolower($item["category"]); ?>">
+      <?php echo $item["category"]; ?></a>
+      &gt; <?php echo $item["title"]; ?>
+  </div>
   <div class="media-picture">
     <span>
       <img src="<?php echo $item["cover"]; ?>" alt="<?php echo $item["title"]; ?>">
@@ -43,7 +49,7 @@ include("inc/header.php");
         </tr>
         <tr>
           <th>Format</th>
-          <td><?php echo $item["format"]; ?></td>
+          <td><?php echo implode(", ",$item["format"]); ?></td>
         </tr>
         <tr>
           <th>Year</th>
@@ -75,6 +81,22 @@ include("inc/header.php");
         <tr>
           <th>Screenplay</th>
           <td><?php echo implode(", ",$item["screenplay"]); ?></td>
+        </tr>
+        <?php
+        }
+        elseif(strtolower($item["category"]) == "music") {
+          ?>
+          <tr>
+          <th>Title</th>
+          <td><?php echo $item["title"]; ?></td>
+        </tr>
+          <tr>
+          <th>Album</th>
+          <td><?php echo $item["album"]; ?></td>
+        </tr>
+        <tr>
+          <th>Artist</th>
+          <td><?php echo implode(", ",$item["artist"]); ?></td>
         </tr>
         <?php
         }
