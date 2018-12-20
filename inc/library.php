@@ -47,6 +47,16 @@ $catalog [101] = [
   "category" => "Movies"
 ];
 
+$catalog [102] = [
+  "title" => "Terrified",
+  "cover" => "img/102.jpg",
+  "genre" => "Horror",
+  "format" => "Blue-Ray",
+  "edition" => "Standard",
+  "distributor" => "Argentina",
+  "category" => "Movies"
+];
+
 $catalog [301] = [
   "title" => "Humans Are Such Easy Prey",
   "album" => "Dangerous Days",
@@ -94,16 +104,6 @@ $catalog [204] = [
     "Chapman and Hall"
   ],
   "author" => "William Hope Hodgson"
-];
-
-$catalog [102] = [
-  "title" => "Event Horizon",
-  "cover" => "img/101.jpg",
-  "genre" => "Horror",
-  "format" => "Blue-Ray",
-  "edition" => "Collectors",
-  "distributor" => "Arrow",
-  "category" => "Movies"
 ];
 
 $catalog [302] = [

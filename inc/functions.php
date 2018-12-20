@@ -10,20 +10,21 @@ function get_item_html($id,$item) {
 }
 
 
-// filters based on category
+// filters based on category and sorts by title
 function array_category($catalog, $category) {
-  if($category == null) {
-    return array_keys($catalog);
-  }
   $output = array();
 
   foreach($catalog as $id => $item) {
-    if(strtolower($category) == strtolower($item["category"])) {
-
-    $output[] = $id;
+    if($category == null OR strtolower($category) == strtolower($item["category"])) {
+      $sort = $item["title"];
+      $sort = ltrim($sort,"the ");
+      $sort = ltrim($sort,"a ");
+      $sort = ltrim($sort,"an ");
+    $output[$id] = $sort;
     }
 }
-return $output;
+asort($output);
+return array_keys($output);
 }
 
 ?>
