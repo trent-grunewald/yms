@@ -3,6 +3,8 @@
 // This IF statement checks to see if the request method is post, if it is, it will submit the page and run the block below
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
+  // trim is used to remove white space from the beginning and end of text
+  //Filters input based on type
     $name = trim(filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING));
     $email = trim(filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL));
     $suggestion = trim(filter_input(INPUT_POST, "suggest", FILTER_SANITIZE_SPECIAL_CHARS));
