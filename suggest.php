@@ -4,7 +4,7 @@
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // trim is used to remove white space from the beginning and end of text
-  //Filters input based on type
+  //Filters input makes sure INCOMING form data is safe to use
     $name = trim(filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING));
     $email = trim(filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL));
     $suggestion = trim(filter_input(INPUT_POST, "suggest", FILTER_SANITIZE_SPECIAL_CHARS));
