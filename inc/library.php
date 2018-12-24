@@ -77,3 +77,17 @@ $catalog [301] = [
   "category" => "Music",
   "artist" => ["Perterbator"]
 ];
+
+$catalog [302] = [
+  "title" => "Humans Are Such Easy Prey",
+  "album" => "Dangerous Days",
+  "cover" => "img/301.jpg",
+  "genre" => ["Synthwave"],
+  "format" => [
+    "Vinyl",
+    "Collectors"
+  ],
+  "year" => 2016,
+  "category" => "Music",
+  "artist" => ["Perterbator"]
+];
